@@ -44,7 +44,15 @@ Then make sure to use Java 17, it should be default when installing IntelliJ.<br
 Once the project is set, it should automatically open <b>build.gradle</b>.<br>
 Add this line to the plugins table <pre>id 'io.pzstorm.capsid' version '0.4.2'</pre><br>
 <img src="https://github.com/Konijima/PZ-Libraries/blob/Tutorial-v2/Images/SetupCapsid_createNewProject_addCapsid.png?raw=true" /><br>
-Then click on the Load Gradle Icon or press <b>Ctrl + Shift + O</b> to apply the changes.
+<br>
+Add this line to <code>settings.gradle</code>
+<pre>
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.4.0'
+}
+</pre><br>
+Then click on the Load Gradle Icon or press <b>Ctrl + Shift + O</b> to apply the changes.<br>
+<b>Note</b>: Make sure you're using Gradle version 7 (look in <code>gradle/wrapper/gradle-wrapper.properties</code>)
 </details>
 
 <details>
